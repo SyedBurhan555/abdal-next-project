@@ -4,6 +4,7 @@ import ProductGrid from './components/latestproduct';
 import Shopes from './shopes';
 import lamp from "../assets/images/image32.png";
 import sofapic from "../assets/images/hero-chair.png";
+import pic from "../assets/images/chair2.png";
 
 
 export default function HomePage() {
@@ -38,7 +39,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((id) => (
               <div key={id} className="border rounded-lg p-4 text-center">
-                <Image src="/images/chair1.png" alt="Unique Product" width="300" height="300" />
+                <Image src={pic} alt="Unique Product" width="300" height="300" />
                 <h3 className="text-lg font-medium">Comfort Handy Craft</h3>
                 <p className="text-primary text-xl font-bold">$42.00</p>
                 <Link href={`/product/${id}`} className="text-primary hover:underline">
