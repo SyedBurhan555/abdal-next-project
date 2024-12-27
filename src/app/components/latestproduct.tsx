@@ -1,20 +1,21 @@
 // components/ProductGrid.js
 "use client";
 import Image from 'next/image';
-import heroChair from "../../assets/images/hero-chair.png";
-import cb from "../../assets/images/cb.png";
-import hsImage from "../../assets/images/hs.png";
-import fd from "../../assets/images/fd.png";
-import pq from "../../assets/images/pq.png";
-import spcFive from "../../assets/images/spc-five.png";
+import heroChair from "../../public/assets/images/hero-chair.png";
+import cb from "../../public/assets/images/cb.png";
+import hsImage from "../../public/assets/images/hs.png";
+import fd from "../../public/assets/images/fd.png";
+import pq from "../../public/assets/images/pq.png";
+import spcFive from "../../public/assets/images/spc-five.png";
+
 const ProductGrid = () => {
   const products = [
-    { id: 1, name: 'The Catalyzer', price: '$16.00', image: heroChair },
-    { id: 2, name: 'Shooting Stars', price: '$21.15', image: hsImage },
-    { id: 3, name: 'Neptune', price: '$12.00', image: cb },
-    { id: 4, name: 'The 400 Blows', price: '$18.40', image:  spcFive },
-    { id: 5, name: 'The Catalyzer', price: '$16.00', image:  pq },
-    { id: 6, name: 'Shooting Stars', price: '$21.15', image:  fd },
+    { id: 1, name: 'The Catalyzer', price: '$16.00', image: '/assets/images/hero-chair.png' },
+    { id: 2, name: 'Shooting Stars', price: '$21.15', image: '/assets/images/hs.png' },
+    { id: 3, name: 'Neptune', price: '$12.00', image: '/assets/images/cb.png' },
+    { id: 4, name: 'The 400 Blows', price: '$18.40', image:  '/assets/images/spc-five.png' },
+    { id: 5, name: 'The Catalyzer', price: '$16.00', image:  '/assets/images/pq.png' },
+    { id: 6, name: 'Shooting Stars', price: '$21.15', image:  '/assets/images/fd.png' },
   ];
   
   return (
@@ -26,8 +27,8 @@ const ProductGrid = () => {
               <div className="block relative h-48 rounded overflow-hidden cursor-pointer hover:shadow-lg transition">
                 <Image
                   alt={product.name}
-                  // width={100}
-                  // height={100}
+                  width={100}
+                  height={100}
                   className="object-cover object-center w-full h-full block"
                   src={product.image}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33.33vw" 

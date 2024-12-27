@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ProductGrid from './components/latestproduct';
 import Shopes from './shopes';
-import lamp from "../assets/images/image32.png";
-import sofapic from "../assets/images/hero-chair.png";
-import pic from "../assets/images/chair2.png";
+import lamp from "../../public/assets/images/image32.png";
+import sofapic from "../../public/assets/images/hero-chair.png";
+import pic from "../../public/assets/images/chair2.png";
 
 
 export default function HomePage() {
