@@ -1,12 +1,6 @@
 // components/ProductGrid.js
 "use client";
 import Image from 'next/image';
-import heroChair from "../../public/assets/images/hero-chair.png";
-import cb from "../../public/assets/images/cb.png";
-import hsImage from "../../public/assets/images/hs.png";
-import fd from "../../public/assets/images/fd.png";
-import pq from "../../public/assets/images/pq.png";
-import spcFive from "../../public/assets/images/spc-five.png";
 
 const ProductGrid = () => {
   const products = [
